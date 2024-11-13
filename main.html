@@ -17,5 +17,74 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="contacto">
+            <h2>Regálame tus datos, crack.</h2>
+            <p>Identifícate para poder responder tus preguntas:</p>
+            <!-- Formulario de contacto -->
+            <form>
+                <!-- label es una etiqueta que nos sirve para asociar un texto descriptivo a un elemento de entrada.
+                 El atributo for en label ayuda a vincularlo con un elemento del formulario especifico ya que el atributo for contiene el valor del ID del campo de entrada con el cual se asocia. -->
+                <label for="nombre">Nombre y Apellido Paterno:</label>
+                <!-- Type me ayuda a identificar el tipo de dato que se va a ingresar. Text hace que se abra un cuadro de texto.
+                 El ID del input debe ser el mismo que el for de la etiqueta label.-->
+                <input type="text" id="nombre" placeholder="Jorge Nitales..." required>
+
+                <label for="email">Correo electrónico de contacto:</label>
+                <input type="email" id="email" placeholder="tucorreo@dominio.com" required>
+
+                <label for="asunto">Asunto:</label>
+                <!-- Este tipo de select tienden a ser cortas para hacer la interacción con el usuario más facil -->
+                <select id="asunto" required>
+                    <option value="pregunta">Pregunta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <!-- Esta es una sugerencia de cómo podemos organizar nuestro código para hacerlo agilizar su lectura -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea 
+                    id="mensaje" 
+                    rows="5" 
+                    placeholder="Cuéntame, ¿en qué te puedo ayudar?..." 
+                    required
+                >
+                </textarea>
+
+                <!-- fieldset nos sirve para agrupar elementos de un formulario relacionado. Facilita la comprensión en el formulario, especialmente para los usuarios de lectores de pantalla -->
+                <fieldset>
+                    <!-- legend nos ayuda a proporcionar un título a mi grupo de información almacenado en el fieldset.
+                    Name me ayuda a que solo pueda seleccionar un radio, se coloca el mismo name para permitir seleccionar una sola opción en este grupo.-->
+                    <legend>Género</legend>
+                    <label for="gen-masculino">Masculino</label>
+                    <input type="radio" id="gen-masculino" name="genero">
+
+                    <label for="gen-femenino">Femenino</label>
+                    <input type="radio" id="gen-femenino" name="genero">
+
+                    <label for="gen-otro">Otro</label>
+                    <input type="radio" id="gen-otro" name="genero">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="interes-cocinar">Cocinar</label>
+                    <input type="checkbox" id="interes-cocinar" name="cocinar">
+                    
+                    <label for="interes-meditar">Meditar</label>
+                    <input type="checkbox" id="interes-meditar" name="meditar">
+                    
+                    <label for="interes-senderismo">Senderismo</label>
+                    <input type="checkbox" id="interes-senderismo" name="senderismo">
+
+                    <label for="interes-escribir">Escribir</label>
+                    <input type="checkbox" id="interes-escribir" name="escribir">
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
