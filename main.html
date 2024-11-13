@@ -7,6 +7,10 @@
     <meta name="author" content="Alejandro Ruiz">
     <meta name="description" content="Sitio web Alex Tremo">
     <meta name="keywords" content="html, etiquetas semanticas, javascript, proyecto">
+
+    <!-- Enlace a Material Icons.
+     Este enlace carga la biblioteca de Material Icons desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +18,10 @@
         <h1>Bienvenidos Al exTranjero</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Articulos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#"><span class="material-icons">home</span> Inicio</a></li>
+                <li><a href="#"><span class="material-icons">person</span> Sobre mí</a></li>
+                <li><a href="#"><span class="material-icons">military_tech</span> Trabajos</a></li>
+                <li><a href="#contacto"><span class="material-icons">email</span> Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -86,7 +90,7 @@
                     <input type="checkbox" id="interes-escribir" name="escribir">
                 </fieldset>
 
-                <button type="submit">Enviar</button>
+                <button type="submit"><span class="material-icons">send</span> Enviar</button>
             </form>
         </section>
     </main>
